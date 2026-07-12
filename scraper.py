@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
-from datetime import datetime
+from datetime import datetime, timezone
 from urllib.parse import urljoin
 
 SOURCES = [
@@ -103,7 +103,7 @@ def create_feed():
             f"Source: {item['source']}"
         )
 
-        fe.pubDate(datetime.now())
+        fe.pubDate(datetime.now(timezone.utc))
 
 
     fg.rss_file(
