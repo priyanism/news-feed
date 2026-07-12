@@ -7,5 +7,5 @@ I had never used GitHub Actions before this. I learned by building, fixing error
 
 It may not be perfect, but it's the project that got me started.
 
-Version: v1.0
+Version: v1.0 | 
 Started: July 2026
